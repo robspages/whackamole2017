@@ -13,7 +13,14 @@
         grid-template-columns: 1fr 25em;
       }
 
-      a { font-family: 'Material Icons'; } 
+      a { 
+        font-family: 'Material Icons'; 
+        display: inline-block; 
+        width: 2em; 
+        height: 2em; 
+        text-decoration: none; 
+        font-size: 1em;
+      } 
 
       header {
         grid-row: 1;
@@ -47,12 +54,15 @@
       .entries
       {
         list-style-type: none;
-        margin-left: 0;
+        margin: 0; 
+        padding: 0;
       }
 
       .entries li 
       {
-        margin: .15em;
+        display: table; 
+        margin: .15em 0;
+        vertical-align: middle;
       }
     </style>
   </head>
@@ -65,8 +75,8 @@
     </header>
 
     <section>
-      <h3>Rules</h3>
-      <h4>Judging</h4>
+      <h2>Rules</h2>
+      <h3>Judging</h3>
       To be a judge, you will need to: 
       <ul>
         <li>Not have a submission - judges are not eligible for the contest</li>
@@ -74,7 +84,7 @@
         <li>Be present in the office on April 27th during the judging</li>
       </ul>
       <p>Judging will be done in secret, in a private Slack channel for the purpose. All judges may weigh in on any/all of the Scoring categories - the final score in each category will be the average of the provided scores.</p>
-      <h4>Scoring</h4>
+      <h3>Scoring</h3>
       You will be judged on: 
       <ul>
         <li>Difficulty: How many features did you add and are they all working? Up to 20 points</li>
@@ -84,7 +94,7 @@
       </ul>
     </section>
     <aside>
-      <h3>Entries</h3>
+      <h2>Entries</h2>
       <ul class="entries">
         <li>Matt M: <a href="2017/mattm/dist/index.html">play_arrow</a> <a href="https://github.com/robspages/whackamole2017/tree/master/2017/mattm">code</a></li>
         <li>Cai G: <a href="2017/caig/index.html">play_arrow</a> <a href="https://github.com/robspages/whackamole2017/tree/master/2017/caig">code</a></li>
