@@ -1,0 +1,45 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+#mainMenu {
+  position: fixed;
+  top: 50%;
+  left: 25%;
+  transform: translate(-50%, -50%);
+  
+  button {
+    padding: 15px;
+    margin: 5px;
+    background: white;
+  }
+}
+
+#highScoreForm {
+  position: fixed;
+  background: white;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  transform: translate(-50%, -50%);
+  
+  .form{
+    width: 205px;
+    margin: auto;
+    * {
+      display: block;
+      box-sizing: border-box;
+      width: 100%;
+      text-align: center;
+    }
+    input{
+      text-transform: uppercase;
+      font-size: 80px;
+      width: 205px;
+    }
+    button {
+      font-size: 30px;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+!!!
+%html
+  %head
+    %link{rel: 'stylesheet', type: "text/css", href: "./index.css"}
+    %script{type: "text/javascript", src: "http://localhost:1337/livereload.js"}
+  %body
+    #mainMenu
+      %button#startGame
+        Start Game
+      %button#hammerColor
+        Hammer Color
+    #highScoreForm
+      %h1 New High Score!
+      .form
+        %label
+          Enter Your Initials:
+        %input{type: 'text', maxlength: '3', pattern: "[A-Za-z]"}
+        %button
+          Submit
+    %script{type: "text/javascript", src: "./app.js"}
